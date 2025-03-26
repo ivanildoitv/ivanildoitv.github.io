@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITV Soluções e Tecnologia</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+        
+      /* Animações */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+      }
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      /* Estilo para a seção hero */
+      #hero {
+        background-image: url("assets/bg3.webp");
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <header class="bg-blue-600 text-white">
+      <div class="container mx-auto p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+          <img src="./assets/logo01.jpg" alt="" class="w-16 rounded-full" />
+          <h1 class="text-2xl font-bold">ITV Soluções e Tecnologia</h1>
+        </div>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="#sobre" class="hover:underline">Sobre</a></li>
+            <li><a href="#servicos" class="hover:underline">Serviços</a></li>
+            <li>
+              <a href="#missao-visao-valores" class="hover:underline"
+                >Missão, Visão e Valores</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero" class="text-white py-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-4">Transformando Dados em Decisões</h2>
+        <p class="text-xl mb-8">
+          Mais de 5 anos no mercado de coleta de dados e integração com
+          ferramentas de BI.
+        </p>
+        <a
+          href="#missao-visao-valores"
+          class="bg-white text-blue-500 py-2 px-4 rounded-full font-bold hover:bg-gray-200"
+          >Saiba Mais</a
+        >
+      </div>
+    </section>
+
+    <section id="sobre" class="py-20 fade-in">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-6 text-center">Sobre Nós</h2>
+        <p class="text-lg text-center">
+          Na ITV Soluções e Tecnologia, somos especialistas em engenharia de
+          dados, oferecendo soluções de coleta e integração de dados com
+          ferramentas de BI como Power BI, QlikView e Tableau. Nosso objetivo é
+          apoiar a gestão das empresas direcionadas ao Data Driven.
+        </p>
+      </div>
+    </section>
+
+    <section id="servicos" class="bg-gray-200 py-20 fade-in">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-6 text-center">Nossos Serviços</h2>
+        <ul class="text-lg text-center space-y-4">
+          <li>Coleta de Dados</li>
+          <li>Integração com Ferramentas de BI</li>
+          <li>Consultoria em Data Driven</li>
+          <li>Suporte Técnico</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="missao-visao-valores" class="py-20 fade-in">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-6 text-center">
+          Missão, Visão e Valores
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold mb-4">Missão</h3>
+            <p class="text-lg">
+              Nossa missão é transformar dados em decisões estratégicas,
+              proporcionando soluções inovadoras e eficientes que impulsionem o
+              sucesso dos nossos clientes.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold mb-4">Visão</h3>
+            <p class="text-lg">
+              Ser reconhecidos como líderes em engenharia de dados, promovendo a
+              cultura Data Driven e contribuindo para a evolução tecnológica das
+              empresas.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold mb-4">Valores</h3>
+            <ul class="text-lg space-y-2">
+              <li>Inovação</li>
+              <li>Excelência</li>
+              <li>Transparência</li>
+              <li>Compromisso</li>
+              <li>Colaboração</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-blue-600 text-white py-4">
+      <div class="container mx-auto text-center">
+        <div class="flex justify-center items-center space-x-4">
+          <img src="./assets/logo01.jpg" alt="" class="w-8 rounded-full" />
+          <p>
+            &copy; 2025 ITV Soluções e Tecnologia. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Função para adicionar a classe 'visible' quando o elemento entra na viewport
+      function handleScroll() {
+        const elements = document.querySelectorAll(".fade-in");
+        elements.forEach((element) => {
+          const rect = element.getBoundingClientRect();
+          if (rect.top < window.innerHeight) {
+            element.classList.add("visible");
+          }
+        });
+      }
+
+      // Adiciona o evento de rolagem
+      window.addEventListener("scroll", handleScroll);
+
+      // Chama a função ao carregar a página
+      handleScroll();
+    </script>
+  </body>
+</html>
