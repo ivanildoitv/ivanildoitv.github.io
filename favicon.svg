@@ -1,40 +1,27 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background com gradiente moderno -->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="38 18 521 521">
   <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#2563eb;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#f1f5f9;stop-opacity:1" />
-    </linearGradient>
-    <!-- Sombra suave -->
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="1" stdDeviation="0.5" flood-color="#1e3a8a" flood-opacity="0.3"/>
-    </filter>
+    <style>
+      .fi1 { fill: #1e2430; }
+      .fi2 { fill: #eef2ef; }
+      .fi3 { fill: #fff; stroke: #000; stroke-miterlimit: 10; }
+      .fi5 { fill: #fff; stroke: #1e2430; stroke-miterlimit: 10; }
+      .fi6 { fill: #e4e5e0; }
+      .fi7 { fill: #454a50; }
+    </style>
   </defs>
-  
-  <!-- Fundo com bordas arredondadas -->
-  <rect width="32" height="32" rx="6" ry="6" fill="url(#bgGradient)" filter="url(#shadow)"/>
-  
-  <!-- Texto ITV estilizado -->
-  <g font-family="system-ui, -apple-system, sans-serif" font-weight="700" fill="url(#textGradient)">
-    <!-- Letra I -->
-    <rect x="6" y="8" width="2.5" height="16" rx="1"/>
-    <rect x="5" y="8" width="4.5" height="2" rx="1"/>
-    <rect x="5" y="22" width="4.5" height="2" rx="1"/>
-    
-    <!-- Letra T -->
-    <rect x="12" y="8" width="7" height="2.5" rx="1"/>
-    <rect x="14.25" y="10" width="2.5" height="14" rx="1"/>
-    
-    <!-- Letra V -->
-    <polygon points="22,8 24.5,8 27,20 29,8 31,8 27.5,24 25.5,24" />
-  </g>
-  
-  <!-- Elemento decorativo sutil -->
-  <circle cx="28" cy="4" r="1.5" fill="#ffffff" opacity="0.3"/>
-  <circle cx="4" cy="28" r="1" fill="#ffffff" opacity="0.2"/>
+  <polygon class="fi6"
+    points="77.22 144.84 77.22 411.5 298.33 534.17 519.44 411.5 519.44 144.84 298.33 23.17 77.22 144.84" />
+  <polygon class="fi1"
+    points="102.44 160.24 102.44 396.1 298.65 504.53 494.85 396.1 494.85 160.24 298.65 51.8 102.44 160.24" />
+  <polygon class="fi2"
+    points="106.72 163.22 106.72 392.54 297.71 498.5 489.72 392.54 489.72 163.22 297.71 58.28 106.72 163.22" />
+  <polygon class="fi7"
+    points="112 165.5 112 389.61 298 493.17 485 389.61 485 165.5 298 62.94 112 165.5" />
+  <circle class="fi5" cx="190.83" cy="202.22" r="14.61" />
+  <rect class="fi3" x="178.67" y="223.39" width="26.78" height="126.11" />
+  <path class="fi3"
+    d="M242.89,187.51h25.5v34.94h30.83v24h-30.67l.17,67.5s1.33,11.83,9.71,12.38,8.75.31,13.69.12c.94-.04,7.5-.08,7.5-.08l-.4,22.08-26.83-.06s-27.92-3.11-29.5-31.11c-1.47-25.97,0-71.33,0-71.33h-21v-22.67h20.83l.17-35.78Z" />
+  <polygon class="fi3"
+    points="306.44 223.06 334.67 223.06 366.33 317.39 398.44 223.06 426.78 223.06 379.44 349.28 353.78 349.28 306.44 223.06" />
 </svg>
