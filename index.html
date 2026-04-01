@@ -11,7 +11,9 @@
     <link rel="icon" type="image/svg+xml" sizes="16x16" href="favicon-16x16.svg">
     <link rel="apple-touch-icon" href="apple-touch-icon.svg">
     <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#3b82f6">
+    <meta name="theme-color" content="#1e2430">
+    <meta name="version" content="2.0.0">
+    <!-- v2.0.0 — Paleta de cores baseada na identidade visual da logo ITV -->
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -20,28 +22,28 @@
           extend: {
             colors: {
               primary: {
-                50: '#eff6ff',
-                100: '#dbeafe',
-                200: '#bfdbfe',
-                300: '#93c5fd',
-                400: '#60a5fa',
-                500: '#3b82f6',
-                600: '#2563eb',
-                700: '#1d4ed8',
-                800: '#1e40af',
-                900: '#1e3a8a',
+                50: '#f4f5f5',
+                100: '#e6e7e8',
+                200: '#c9cacc',
+                300: '#a8aab0',
+                400: '#777e88',
+                500: '#454a50',
+                600: '#363b40',
+                700: '#292d33',
+                800: '#1e2430',
+                900: '#141820',
               },
               secondary: {
-                50: '#f0f9ff',
-                100: '#e0f2fe',
-                200: '#bae6fd',
-                300: '#7dd3fc',
-                400: '#38bdf8',
-                500: '#0ea5e9',
-                600: '#0284c7',
-                700: '#0369a1',
-                800: '#075985',
-                900: '#0c4a6e',
+                50: '#f7f8f5',
+                100: '#eef2ef',
+                200: '#e4e5e0',
+                300: '#c5c6c0',
+                400: '#989d97',
+                500: '#6b706a',
+                600: '#555a54',
+                700: '#414440',
+                800: '#2d302a',
+                900: '#1a1d18',
               }
             },
             animation: {
@@ -76,8 +78,8 @@
                 '50%': { transform: 'translateY(-10px)' }
               },
               glow: {
-                'from': { boxShadow: '0 0 20px #3b82f6' },
-                'to': { boxShadow: '0 0 30px #3b82f6, 0 0 40px #3b82f6' }
+                'from': { boxShadow: '0 0 20px #454a50' },
+                'to': { boxShadow: '0 0 30px #454a50, 0 0 40px #1e2430' }
               }
             }
           }
@@ -86,11 +88,11 @@
     </script>
     <style>
       .gradient-bg {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #454a50 0%, #1e2430 100%);
       }
       
       .hero-gradient {
-        background: linear-gradient(135deg, rgba(59, 130, 246, 0.9) 0%, rgba(37, 99, 235, 0.8) 50%, rgba(29, 78, 216, 0.9) 100%),
+        background: linear-gradient(135deg, rgba(30, 36, 48, 0.97) 0%, rgba(69, 74, 80, 0.93) 60%, rgba(30, 36, 48, 0.96) 100%),
                     url("assets/bg3.webp");
         background-size: cover;
         background-position: center;
@@ -107,14 +109,14 @@
       }
       
       .service-icon {
-        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        background: linear-gradient(135deg, #454a50, #1e2430);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
       }
       
       .text-gradient {
-        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        background: linear-gradient(135deg, #454a50, #1e2430);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -160,7 +162,7 @@
       
       /* Gradientes animados */
       .text-gradient {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #454a50 0%, #1e2430 50%, #363b40 100%);
         background-size: 200% 200%;
         animation: shimmer 3s ease-in-out infinite;
         -webkit-background-clip: text;
@@ -180,8 +182,8 @@
       }
       
       @keyframes glow {
-        0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); }
-        50% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.6), 0 0 40px rgba(59, 130, 246, 0.3); }
+        0%, 100% { box-shadow: 0 0 20px rgba(69, 74, 80, 0.4); }
+        50% { box-shadow: 0 0 30px rgba(69, 74, 80, 0.7), 0 0 40px rgba(30, 36, 48, 0.4); }
       }
       
       @keyframes float {
@@ -208,7 +210,7 @@
       
       /* Gradiente de texto melhorado */
       .text-gradient {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+        background: linear-gradient(135deg, #454a50 0%, #1e2430 50%, #363b40 100%);
         background-size: 200% 200%;
         animation: shimmer 4s ease-in-out infinite;
         -webkit-background-clip: text;
@@ -259,8 +261,8 @@
           <!-- Logo e Nome -->
           <div class="flex items-center space-x-4">
             <div class="relative">
-              <img src="./assets/logo02.jpg" alt="ITV Soluções" class="w-12 h-12 rounded-full shadow-lg ring-2 ring-primary-500/20 animate-pulse-slow" />
-              <div class="absolute -inset-1 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full blur opacity-20 animate-glow"></div>
+              <img src="./assets/logo_oficial.svg" alt="ITV Soluções" class="w-12 h-12 shadow-lg animate-pulse-slow" />
+              <div class="absolute -inset-1 bg-gradient-to-r from-primary-400 to-primary-800 rounded-full blur opacity-25 animate-glow"></div>
             </div>
             <div>
               <h1 class="text-xl lg:text-2xl font-bold text-gradient">ITV Soluções</h1>
@@ -354,11 +356,11 @@
           <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             Transformando
             <span class="relative">
-              <span class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Dados</span>
-              <div class="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-orange-500 blur opacity-30 animate-pulse"></div>
+              <span class="bg-gradient-to-r from-secondary-100 to-white bg-clip-text text-transparent">Dados</span>
+              <div class="absolute -inset-1 bg-gradient-to-r from-secondary-200 to-white blur opacity-25 animate-pulse"></div>
             </span>
             em<br/>
-            <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Decisões Estratégicas</span>
+            <span class="bg-gradient-to-r from-secondary-200 to-secondary-100 bg-clip-text text-transparent">Decisões Estratégicas</span>
           </h1>
           
           <!-- Subtítulo -->
@@ -431,7 +433,7 @@
     </section>
 
     <!-- Seção Sobre Expandida -->
-    <section id="sobre" class="py-20 lg:py-32 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+    <section id="sobre" class="py-20 lg:py-32 bg-gradient-to-br from-secondary-50 to-secondary-100 relative overflow-hidden">
       <!-- Elementos decorativos -->
       <div class="absolute top-0 left-0 w-full h-full">
         <div class="absolute top-20 left-10 w-64 h-64 bg-primary-200/30 rounded-full blur-3xl animate-pulse-slow"></div>
@@ -850,11 +852,11 @@
         <!-- Nova Seção: Desenvolvimento Web -->
         <div class="mt-20 fade-in">
           <div class="text-center mb-16">
-            <span class="inline-block px-4 py-2 bg-gradient-to-r from-pink-100 to-purple-100 text-pink-600 rounded-full text-sm font-semibold mb-4">
+            <span class="inline-block px-4 py-2 bg-gradient-to-r from-secondary-100 to-primary-100 text-primary-700 rounded-full text-sm font-semibold mb-4">
               Desenvolvimento Web
             </span>
             <h3 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Criamos <span class="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">Sites Modernos</span>
+              Criamos <span class="bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">Sites Modernos</span>
             </h3>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Desenvolvimento de sites profissionais, responsivos e otimizados para todos os tipos de negócios
@@ -968,11 +970,11 @@
         <!-- Seção Microsoft Fabric -->
         <div class="mt-20 fade-in">
           <div class="text-center mb-16">
-            <span class="inline-block px-4 py-2 bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-600 rounded-full text-sm font-semibold mb-4">
+            <span class="inline-block px-4 py-2 bg-gradient-to-r from-primary-100 to-secondary-200 text-primary-700 rounded-full text-sm font-semibold mb-4">
               Microsoft Fabric
             </span>
             <h3 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Plataforma <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Unificada</span> de Analytics
+              Plataforma <span class="bg-gradient-to-r from-primary-500 to-primary-800 bg-clip-text text-transparent">Unificada</span> de Analytics
             </h3>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Transforme sua estratégia de dados com Microsoft Fabric - a plataforma de analytics unificada que integra todos os serviços de dados em uma solução completa
@@ -986,7 +988,7 @@
               <div class="prose prose-lg max-w-none">
                 <h4 class="text-2xl font-bold text-gray-900 mb-6">O que é Microsoft Fabric?</h4>
                 <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                  O <strong class="text-blue-600">Microsoft Fabric</strong> é uma plataforma de analytics unificada que reúne todas as ferramentas de dados em um único ambiente SaaS. Desde a movimentação de dados até a ciência de dados, análise em tempo real e business intelligence.
+                  O <strong class="text-primary-600">Microsoft Fabric</strong> é uma plataforma de analytics unificada que reúne todas as ferramentas de dados em um único ambiente SaaS. Desde a movimentação de dados até a ciência de dados, análise em tempo real e business intelligence.
                 </p>
                 
                 <p class="text-lg text-gray-700 leading-relaxed mb-6">
@@ -999,8 +1001,8 @@
                 <h5 class="text-xl font-bold text-gray-900 mb-4">Principais Benefícios</h5>
                 
                 <div class="flex items-start space-x-4">
-                  <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div class="flex-shrink-0 w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
+                    <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                     </svg>
                   </div>
@@ -1011,8 +1013,8 @@
                 </div>
                 
                 <div class="flex items-start space-x-4">
-                  <div class="flex-shrink-0 w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
-                    <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div class="flex-shrink-0 w-10 h-10 bg-secondary-200 rounded-lg flex items-center justify-center">
+                    <svg class="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                   </div>
@@ -1038,7 +1040,7 @@
             
             <!-- Card de Arquitetura -->
             <div class="slide-in-right">
-              <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
+              <div class="bg-gradient-to-br from-secondary-50 to-primary-50 rounded-2xl p-8 border border-secondary-200">
                 <h5 class="text-xl font-bold text-gray-900 mb-6 text-center">Arquitetura Medallion</h5>
                 
                 <div class="space-y-4">
@@ -1076,8 +1078,8 @@
                   </div>
                 </div>
                 
-                <div class="mt-6 p-4 bg-white/50 rounded-lg">
-                  <div class="flex items-center justify-center text-blue-700">
+                  <div class="mt-6 p-4 bg-white/50 rounded-lg">
+                  <div class="flex items-center justify-center text-primary-700">
                     <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                     </svg>
@@ -1220,7 +1222,7 @@
           </div>
           
           <!-- Call to Action Fabric -->
-          <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 lg:p-12 text-white text-center">
+          <div class="bg-gradient-to-r from-primary-700 to-primary-900 rounded-2xl p-8 lg:p-12 text-white text-center">
             <h4 class="text-2xl lg:text-3xl font-bold mb-4">
               Pronto para Modernizar sua Infraestrutura de Dados?
             </h4>
@@ -1228,10 +1230,10 @@
               Implemente Microsoft Fabric e unifique todos os seus serviços de dados em uma plataforma moderna, escalável e segura.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#contato" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+              <a href="#contato" class="bg-white text-primary-700 px-8 py-3 rounded-full font-semibold hover:bg-secondary-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
                 Consultoria Microsoft Fabric
               </a>
-              <a href="#sobre" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transform hover:scale-105 transition-all duration-300">
+              <a href="#sobre" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary-700 transform hover:scale-105 transition-all duration-300">
                 Saiba Mais
               </a>
             </div>
@@ -1448,7 +1450,7 @@
     </section>
 
     <!-- Seção Contato -->
-    <section id="contato" class="py-20 lg:py-32 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+    <section id="contato" class="py-20 lg:py-32 bg-gradient-to-br from-secondary-50 to-secondary-100 relative overflow-hidden">
       <!-- Background decorativo -->
       <div class="absolute top-0 left-0 w-full h-full">
         <div class="absolute top-20 right-10 w-64 h-64 bg-primary-200/30 rounded-full blur-3xl animate-pulse-slow"></div>
@@ -1650,7 +1652,6 @@
     </section>
 
     <footer class="bg-gradient-to-r from-gray-900 via-primary-900 to-secondary-900 text-white relative overflow-hidden">
-    <footer class="bg-gradient-to-r from-gray-900 via-primary-900 to-secondary-900 text-white relative overflow-hidden">
       <!-- Background decorativo -->
       <div class="absolute inset-0">
         <div class="absolute top-0 left-0 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl"></div>
@@ -1665,8 +1666,8 @@
             <div class="lg:col-span-2">
               <div class="flex items-center space-x-4 mb-6">
                 <div class="relative">
-                  <img src="./assets/logo02.jpg" alt="ITV Soluções" class="w-12 h-12 rounded-full shadow-lg ring-2 ring-white/20" />
-                  <div class="absolute -inset-1 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full blur opacity-30 animate-pulse-slow"></div>
+                  <img src="./assets/logo_oficial.svg" alt="ITV Soluções" class="w-12 h-12 shadow-lg" />
+                  <div class="absolute -inset-1 bg-gradient-to-r from-primary-400 to-primary-800 rounded-full blur opacity-30 animate-pulse-slow"></div>
                 </div>
                 <div>
                   <h3 class="text-2xl font-bold text-white">ITV Soluções</h3>
@@ -1735,7 +1736,8 @@
         <div class="py-8">
           <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div class="flex items-center space-x-6 text-white/70 text-sm">
-              <p>&copy; 2025 ITV Soluções e Tecnologia. Todos os direitos reservados.</p>
+              <p>&copy; 2026 ITV Soluções e Tecnologia. Todos os direitos reservados.</p>
+              <span class="text-white/40">v2.0.0</span>
             </div>
             
             <!-- <div class="flex items-center space-x-6 text-white/70 text-sm">
