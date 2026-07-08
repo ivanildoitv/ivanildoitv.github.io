@@ -1550,10 +1550,13 @@
                     </svg>
                   </span>
                 </button>
+
+                <p id="form-status" role="status" aria-live="polite"
+                   class="hidden text-sm text-center rounded-lg py-3 px-4"></p>
               </form>
             </div>
           </div>
-          
+
           <!-- Informações de Contato -->
           <div class="space-y-8 fade-in slide-in-right">
             <!-- Card Principal -->
@@ -1878,48 +1881,50 @@
         lastScrollTop = scrollTop;
       });
       
-      // Formulário de contato
+      // ─────────────────────────────────────────────────────────────
+      // Envio do formulário via mailto: (site 100% estático)
+      // ─────────────────────────────────────────────────────────────
+      // O GitHub Pages só serve arquivos estáticos (não roda backend), então
+      // o formulário monta um e-mail e abre o aplicativo de e-mail do visitante
+      // já preenchido e endereçado a contato@itvsolucoes.com.br.
+      const CONTACT_TO_EMAIL = 'contato@itvsolucoes.com.br';
+
       const contactForm = document.getElementById('contact-form');
       if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        const statusEl = document.getElementById('form-status');
+
+        const showStatus = (msg) => {
+          statusEl.className = 'text-sm text-center rounded-lg py-3 px-4 bg-primary-50 text-primary-700 border border-primary-200';
+          statusEl.textContent = msg;
+        };
+
+        contactForm.addEventListener('submit', function (e) {
           e.preventDefault();
-          
-          // Simular envio do formulário
-          const submitBtn = this.querySelector('button[type="submit"]');
-          const originalText = submitBtn.innerHTML;
-          
-          submitBtn.innerHTML = `
-            <span class="flex items-center justify-center">
-              <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-              </svg>
-              Enviando...
-            </span>
-          `;
-          submitBtn.disabled = true;
-          
-          // Simular delay de envio
-          setTimeout(() => {
-            submitBtn.innerHTML = `
-              <span class="flex items-center justify-center">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                Mensagem Enviada!
-              </span>
-            `;
-            
-            // Resetar formulário
-            setTimeout(() => {
-              this.reset();
-              submitBtn.innerHTML = originalText;
-              submitBtn.disabled = false;
-              
-              // Mostrar mensagem de sucesso
-              alert('Obrigado! Sua mensagem foi enviada com sucesso. Entraremos em contato em breve.');
-            }, 2000);
-          }, 2000);
+
+          const nome     = contactForm.nome.value.trim();
+          const email    = contactForm.email.value.trim();
+          const empresa  = contactForm.empresa.value.trim();
+          const servico  = contactForm.servico.value;
+          const mensagem = contactForm.mensagem.value.trim();
+
+          const assunto = 'Contato pelo site' + (nome ? ' — ' + nome : '');
+          const corpo = [
+            'Nome: ' + nome,
+            'E-mail: ' + email,
+            'Empresa: ' + (empresa || '(não informado)'),
+            'Serviço de interesse: ' + (servico || '(não informado)'),
+            '',
+            'Mensagem:',
+            mensagem || '(sem mensagem)',
+          ].join('\n');
+
+          const mailto = 'mailto:' + CONTACT_TO_EMAIL
+            + '?subject=' + encodeURIComponent(assunto)
+            + '&body=' + encodeURIComponent(corpo);
+
+          window.location.href = mailto;
+
+          showStatus('Abrimos seu aplicativo de e-mail com a mensagem pronta — é só confirmar o envio para ' + CONTACT_TO_EMAIL + '.');
         });
       }
       
@@ -1933,56 +1938,6 @@
           const yPos = -(scrolled * speed);
           element.style.transform = `translateY(${yPos}px)`;
         });
-      });
-      
-      // Contador animado para estatísticas
-      function animateCounter(element, start, end, duration) {
-        let startTimestamp = null;
-        const step = (timestamp) => {
-          if (!startTimestamp) startTimestamp = timestamp;
-          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-          const current = Math.floor(progress * (end - start) + start);
-          element.textContent = current + (element.dataset.suffix || '');
-          if (progress < 1) {
-            window.requestAnimationFrame(step);
-          }
-        };
-        window.requestAnimationFrame(step);
-      }
-      
-      // Observar contadores
-      const counterObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && !entry.target.dataset.animated) {
-            entry.target.dataset.animated = 'true';
-            const target = parseInt(entry.target.dataset.target || entry.target.textContent);
-            animateCounter(entry.target, 0, target, 2000);
-          }
-        });
-      }, { threshold: 0.5 });
-      
-      // Aplicar aos elementos de estatística
-      document.querySelectorAll('[data-target]').forEach(counter => {
-        counterObserver.observe(counter);
-      });
-      
-      // Lazy loading para imagens
-      const imageObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const img = entry.target;
-            if (img.dataset.src) {
-              img.src = img.dataset.src;
-              img.classList.remove('opacity-0');
-              img.classList.add('opacity-100');
-              imageObserver.unobserve(img);
-            }
-          }
-        });
-      });
-      
-      document.querySelectorAll('img[data-src]').forEach(img => {
-        imageObserver.observe(img);
       });
       
       // Inicialização
