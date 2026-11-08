@@ -104,7 +104,7 @@
       }
       
       .card-hover:hover {
-        transform: translateY(-10px);
+        transform: translateY(-4px);
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
       }
       
@@ -157,7 +157,7 @@
       
       /* Animações para cards */
       .card-hover:hover {
-        transform: translateY(-8px) scale(1.02);
+        transform: translateY(-4px);
       }
       
       /* Gradientes animados */
@@ -204,7 +204,7 @@
       
       /* Hover effects melhorados */
       .card-hover:hover {
-        transform: translateY(-8px) scale(1.02);
+        transform: translateY(-4px);
         box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
       }
       
@@ -255,7 +255,7 @@
   </head>
   <body class="bg-gray-50 text-gray-900 overflow-x-hidden">
     <!-- Header Moderno -->
-    <header class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-lg border-b border-gray-200 shadow-lg transition-all duration-300">
+    <header class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-lg border-b border-gray-200 shadow transition-all duration-300">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-4">
           <!-- Logo e Nome -->
@@ -288,7 +288,7 @@
               Nossa Essência
               <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#contato" class="bg-gradient-to-r from-primary-600 to-secondary-600 text-white px-6 py-2 rounded-full hover:from-primary-700 hover:to-secondary-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <a href="#contato" class="bg-gradient-to-r from-primary-600 to-secondary-600 text-white px-6 py-2 rounded-full hover:from-primary-700 hover:to-secondary-700 transform hover:scale-105 transition-all duration-300 shadow hover:shadow-sm">
               Contato
             </a>
           </nav>
@@ -304,25 +304,25 @@
       
       <!-- Menu Mobile -->
       <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-80 z-[100] md:hidden">
-        <div class="h-full bg-white/95 backdrop-blur-xl border-l border-white/20 shadow-2xl">
+        <div class="h-full bg-white/95 backdrop-blur-xl border-l border-white/20 shadow-md">
           <div class="p-6">
             <div class="flex justify-between items-center mb-8">
               <h2 class="text-xl font-bold text-gradient drop-shadow-sm">Menu</h2>
-              <button id="close-menu" class="p-2 rounded-lg bg-white/80 hover:bg-white/90 backdrop-blur-sm shadow-lg transition-all duration-300">
+              <button id="close-menu" class="p-2 rounded-lg bg-white/80 hover:bg-white/90 backdrop-blur-sm shadow transition-all duration-300">
                 <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
               </button>
             </div>
             
-            <nav class="bg-white/70 backdrop-blur-sm rounded-2xl p-5 shadow-lg border border-white/30">
+            <nav class="bg-white/70 backdrop-blur-sm rounded-2xl p-5 shadow border border-white/30">
               <div class="space-y-3">
                 <a href="#inicio" class="block py-4 px-5 text-gray-800 hover:bg-white/50 rounded-xl transition-all duration-300 mobile-nav-link font-semibold hover:shadow-sm">Início</a>
                 <a href="#sobre" class="block py-4 px-5 text-gray-800 hover:bg-white/50 rounded-xl transition-all duration-300 mobile-nav-link font-semibold hover:shadow-sm">Sobre</a>
                 <a href="#servicos" class="block py-4 px-5 text-gray-800 hover:bg-white/50 rounded-xl transition-all duration-300 mobile-nav-link font-semibold hover:shadow-sm">Serviços</a>
                 <a href="#missao-visao-valores" class="block py-4 px-5 text-gray-800 hover:bg-white/50 rounded-xl transition-all duration-300 mobile-nav-link font-semibold hover:shadow-sm">Nossa Essência</a>
               </div>
-              <a href="#contato" class="block mt-6 bg-gradient-to-r from-primary-600 to-secondary-600 text-white px-6 py-4 rounded-xl text-center hover:from-primary-700 hover:to-secondary-700 transition-all duration-300 mobile-nav-link font-bold shadow-xl hover:shadow-2xl">Contato</a>
+              <a href="#contato" class="block mt-6 bg-gradient-to-r from-primary-600 to-secondary-600 text-white px-6 py-4 rounded-xl text-center hover:from-primary-700 hover:to-secondary-700 transition-all duration-300 mobile-nav-link font-bold shadow-sm hover:shadow-md">Contato</a>
             </nav>
           </div>
         </div>
@@ -391,7 +391,7 @@
           
           <!-- Botões de Ação -->
           <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="#contato" class="group bg-gradient-to-r from-white to-gray-100 text-primary-600 px-8 py-4 rounded-full font-bold text-lg hover:from-gray-100 hover:to-white transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-white/25 flex items-center btn-glow">
+            <a href="#contato" class="group bg-gradient-to-r from-white to-gray-100 text-primary-600 px-8 py-4 rounded-full font-bold text-lg hover:from-gray-100 hover:to-white transform hover:scale-105 transition-all duration-300 shadow-sm hover:shadow-white/10 flex items-center btn-glow">
               <span>Solicitar Consultoria</span>
               <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
@@ -517,7 +517,7 @@
           <div class="slide-in-right">
             <div class="relative">
               <!-- Card de Métricas -->
-              <div class="bg-white rounded-2xl shadow-2xl p-8 relative z-10">
+              <div class="bg-white rounded-2xl shadow-sm p-8 relative z-10">
                 <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Nossos Números</h3>
                 
                 <div class="grid grid-cols-2 gap-6">
@@ -556,7 +556,7 @@
               </div>
               
               <!-- Elemento decorativo -->
-              <div class="absolute -inset-4 bg-gradient-to-r from-primary-400 to-secondary-400 rounded-2xl blur-lg opacity-20 -z-10"></div>
+              <div class="absolute -inset-4 bg-gray-200 rounded-2xl blur-md opacity-20 -z-10"></div>
             </div>
           </div>
         </div>
@@ -568,32 +568,32 @@
           </h3>
           
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            <div class="flex bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 card-hover">
+            <div class="flex bg-white rounded-xl p-6 shadow hover:shadow-sm transition-all duration-300 card-hover">
               <div class="flex items-center justify-center mb-3">
                 <img src="./assets/LogoPowerBI.png" alt="Power BI">
               </div>
             </div>
-            <div class="flex bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 card-hover">
+            <div class="flex bg-white rounded-xl p-6 shadow hover:shadow-sm transition-all duration-300 card-hover">
               <div class="flex items-center justify-center mb-3">
                 <img src="./assets/LogoQlik.png" alt="QlikView">
               </div>
             </div>
-            <div class="flex bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 card-hover">
+            <div class="flex bg-white rounded-xl p-6 shadow hover:shadow-sm transition-all duration-300 card-hover">
               <div class="flex items-center justify-center mb-3">
                 <img src="./assets/LogoTableau.webp" alt="Tableau">
               </div>
             </div>
-            <div class="flex bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 card-hover">
+            <div class="flex bg-white rounded-xl p-6 shadow hover:shadow-sm transition-all duration-300 card-hover">
               <div class="flex items-center justify-center mb-3">
                 <img src="./assets/LogoSql.png" alt="SQL Server">
               </div>
             </div>
-            <div class="flex bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 card-hover">
+            <div class="flex bg-white rounded-xl p-6 shadow hover:shadow-sm transition-all duration-300 card-hover">
               <div class="flex items-center justify-center mb-3">
                 <img src="./assets/LogoCloud.png" alt="Cloud">
               </div>
             </div>
-            <div class="flex bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 card-hover">
+            <div class="flex bg-white rounded-xl p-6 shadow hover:shadow-sm transition-all duration-300 card-hover">
               <div class="flex items-center justify-center mb-3">
                 <img src="./assets/LogoLong.webp" alt="Linguagens">
               </div>
@@ -626,17 +626,15 @@
         <!-- Grid de Serviços -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           <!-- Serviço 1: Coleta de Dados -->
-          <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 card-hover border border-gray-100 fade-in" style="animation-delay: 0.1s;">
+          <div class="group bg-white rounded-2xl p-8 shadow hover:shadow-md transition-all duration-500 card-hover border border-gray-100 fade-in" style="animation-delay: 0.1s;">
             <div class="relative flex justify-start items-center mb-6">
-              <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                 </svg>
               </div>
               <h3 class="text-xl ml-4 font-bold text-gray-900 mb-4">Coleta de Dados</h3>
-              <div class="absolute -inset-2 bg-gradient-to-r from-blue-400 to-blue-600 rounded-xl blur opacity-0 group-hover:opacity-20 transition-opacity duration-300">
 
-              </div>
             </div>
             <p class="text-gray-600 mb-6 leading-relaxed">
               Extraímos e coletamos dados de múltiplas fontes, garantindo integridade, qualidade e consistência para suas análises estratégicas.
@@ -664,15 +662,14 @@
           </div>
           
           <!-- Serviço 2: Integração BI -->
-          <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 card-hover border border-gray-100 fade-in" style="animation-delay: 0.2s;">
+          <div class="group bg-white rounded-2xl p-8 shadow hover:shadow-md transition-all duration-500 card-hover border border-gray-100 fade-in" style="animation-delay: 0.2s;">
             <div class="relative flex justify-start items-center mb-6">
-              <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a1 1 0 01-1-1V9a1 1 0 011-1h1a2 2 0 100-4H4a1 1 0 01-1-1V4a1 1 0 011-1h3a1 1 0 001-1v-1a2 2 0 114 0z"></path>
                 </svg>
               </div>
               <h3 class="text-xl ml-4 font-bold text-gray-900 mb-4">Integração com BI & Analytics</h3>
-              <div class="absolute -inset-2 bg-gradient-to-r from-purple-400 to-purple-600 rounded-xl blur opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </div>
             <p class="text-gray-600 mb-6 leading-relaxed">
               Conectamos seus dados às principais ferramentas de Business Intelligence e plataformas de analytics, criando dashboards intuitivos e relatórios automatizados.
@@ -706,15 +703,14 @@
           </div>
           
           <!-- Serviço 3: Consultoria Data Driven -->
-          <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 card-hover border border-gray-100 fade-in" style="animation-delay: 0.3s;">
+          <div class="group bg-white rounded-2xl p-8 shadow hover:shadow-md transition-all duration-500 card-hover border border-gray-100 fade-in" style="animation-delay: 0.3s;">
             <div class="relative flex justify-start items-center mb-6">
-              <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
                 </svg>
               </div>
               <h3 class="text-xl ml-4 font-bold text-gray-900 mb-4">Consultoria Data Driven</h3>
-              <div class="absolute -inset-2 bg-gradient-to-r from-green-400 to-green-600 rounded-xl blur opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </div>
             <p class="text-gray-600 mb-6 leading-relaxed">
               Orientamos sua empresa na implementação de uma cultura orientada por dados, definindo estratégias e melhores práticas.
@@ -742,16 +738,15 @@
           </div>
           
           <!-- Serviço 4: Automação -->
-          <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 card-hover border border-gray-100 fade-in" style="animation-delay: 0.4s;">
+          <div class="group bg-white rounded-2xl p-8 shadow hover:shadow-md transition-all duration-500 card-hover border border-gray-100 fade-in" style="animation-delay: 0.4s;">
             <div class="relative flex justify-start items-center mb-6">
-              <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
               </div>
               <h3 class="text-xl ml-4 font-bold text-gray-900 mb-4">Automação de Processos</h3>
-              <div class="absolute -inset-2 bg-gradient-to-r from-orange-400 to-orange-600 rounded-xl blur opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </div>
             <p class="text-gray-600 mb-6 leading-relaxed">
               Automatizamos fluxos de dados e relatórios, eliminando tarefas manuais e aumentando a eficiência operacional.
@@ -779,15 +774,14 @@
           </div>
           
           <!-- Serviço 5: Suporte Técnico -->
-          <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 card-hover border border-gray-100 fade-in" style="animation-delay: 0.5s;">
+          <div class="group bg-white rounded-2xl p-8 shadow hover:shadow-md transition-all duration-500 card-hover border border-gray-100 fade-in" style="animation-delay: 0.5s;">
             <div class="relative flex justify-start items-center mb-6">
-              <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
                 </svg>
               </div>
               <h3 class="text-xl ml-4 font-bold text-gray-900 mb-4">Suporte Especializado</h3>
-              <div class="absolute -inset-2 bg-gradient-to-r from-red-400 to-red-600 rounded-xl blur opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </div>
             <p class="text-gray-600 mb-6 leading-relaxed">
               Oferecemos suporte técnico contínuo e treinamentos para garantir o máximo aproveitamento das soluções implementadas.
@@ -815,15 +809,14 @@
           </div>
           
           <!-- Serviço 6: Análise Avançada -->
-          <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 card-hover border border-gray-100 fade-in" style="animation-delay: 0.6s;">
+          <div class="group bg-white rounded-2xl p-8 shadow hover:shadow-md transition-all duration-500 card-hover border border-gray-100 fade-in" style="animation-delay: 0.6s;">
             <div class="relative flex justify-start items-center mb-6">
-              <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                 </svg>
               </div>
               <h3 class="text-xl font-bold text-gray-900 ml-4 mb-4">Análise Avançada</h3>
-              <div class="absolute -inset-2 bg-gradient-to-r from-indigo-400 to-indigo-600 rounded-xl blur opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </div>
             <p class="text-gray-600 mb-6 leading-relaxed">
               Implementamos análises preditivas e machine learning para identificar tendências e oportunidades de negócio.
@@ -868,8 +861,8 @@
           <!-- Grid de Serviços Web -->
           <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             <!-- Site Institucional -->
-            <div class="group bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 card-hover border border-pink-100 hover:border-pink-200">
-              <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="group bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-6 hover:shadow-md transition-all duration-500 card-hover border border-pink-100 hover:border-pink-200">
+              <div class="w-12 h-12 bg-pink-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                 </svg>
@@ -879,8 +872,8 @@
             </div>
             
             <!-- Pequenas Empresas -->
-            <div class="group bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 card-hover border border-blue-100 hover:border-blue-200">
-              <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="group bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-6 hover:shadow-md transition-all duration-500 card-hover border border-blue-100 hover:border-blue-200">
+              <div class="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                 </svg>
@@ -890,8 +883,8 @@
             </div>
             
             <!-- Orçamentos e Reservas -->
-            <div class="group bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 card-hover border border-green-100 hover:border-green-200">
-              <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="group bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 hover:shadow-md transition-all duration-500 card-hover border border-green-100 hover:border-green-200">
+              <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
                 </svg>
@@ -901,8 +894,8 @@
             </div>
             
             <!-- Formulários -->
-            <div class="group bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 card-hover border border-purple-100 hover:border-purple-200">
-              <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="group bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-6 hover:shadow-md transition-all duration-500 card-hover border border-purple-100 hover:border-purple-200">
+              <div class="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                 </svg>
@@ -912,8 +905,8 @@
             </div>
             
             <!-- Blogs e Portais -->
-            <div class="group bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 card-hover border border-teal-100 hover:border-teal-200">
-              <div class="w-12 h-12 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="group bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl p-6 hover:shadow-md transition-all duration-500 card-hover border border-teal-100 hover:border-teal-200">
+              <div class="w-12 h-12 bg-teal-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H15"></path>
                 </svg>
@@ -923,8 +916,8 @@
             </div>
             
             <!-- Portfólios -->
-            <div class="group bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 card-hover border border-rose-100 hover:border-rose-200">
-              <div class="w-12 h-12 bg-gradient-to-br from-rose-500 to-pink-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="group bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-6 hover:shadow-md transition-all duration-500 card-hover border border-rose-100 hover:border-rose-200">
+              <div class="w-12 h-12 bg-rose-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                 </svg>
@@ -934,8 +927,8 @@
             </div>
             
             <!-- Landing Pages -->
-            <div class="group bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 card-hover border border-yellow-100 hover:border-yellow-200">
-              <div class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-amber-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="group bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-6 hover:shadow-md transition-all duration-500 card-hover border border-yellow-100 hover:border-yellow-200">
+              <div class="w-12 h-12 bg-yellow-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                 </svg>
@@ -945,8 +938,8 @@
             </div>
             
             <!-- Design Responsivo -->
-            <div class="group bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 card-hover border border-indigo-100 hover:border-indigo-200">
-              <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="group bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl p-6 hover:shadow-md transition-all duration-500 card-hover border border-indigo-100 hover:border-indigo-200">
+              <div class="w-12 h-12 bg-indigo-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a1 1 0 001-1v-1H7v1a1 1 0 001 1zM3 9a2 2 0 012-2V5a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
                 </svg>
@@ -956,8 +949,8 @@
             </div>
             
             <!-- Manutenção -->
-            <div class="group bg-gradient-to-br from-gray-50 to-slate-50 rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 card-hover border border-gray-100 hover:border-gray-200">
-              <div class="w-12 h-12 bg-gradient-to-br from-gray-500 to-slate-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="group bg-gradient-to-br from-gray-50 to-slate-50 rounded-2xl p-6 hover:shadow-md transition-all duration-500 card-hover border border-gray-100 hover:border-gray-200">
+              <div class="w-12 h-12 bg-gray-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
@@ -1042,12 +1035,12 @@
             
             <!-- Card de Arquitetura -->
             <div class="slide-in-right">
-              <div class="bg-gradient-to-br from-secondary-50 to-primary-50 rounded-2xl p-8 border border-secondary-200">
+              <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200">
                 <h5 class="text-xl font-bold text-gray-900 mb-6 text-center">Arquitetura Medallion</h5>
                 
                 <div class="space-y-4">
                   <!-- Bronze -->
-                  <div class="bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-xl p-4 text-white">
+                  <div class="bg-yellow-600 rounded-xl p-4 text-white">
                     <div class="flex items-center mb-2">
                       <div class="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3">
                         <span class="text-xs font-bold">🥉</span>
@@ -1058,7 +1051,7 @@
                   </div>
                   
                   <!-- Silver -->
-                  <div class="bg-gradient-to-r from-gray-400 to-gray-500 rounded-xl p-4 text-white">
+                  <div class="bg-gray-500 rounded-xl p-4 text-white">
                     <div class="flex items-center mb-2">
                       <div class="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3">
                         <span class="text-xs font-bold">🥈</span>
@@ -1069,7 +1062,7 @@
                   </div>
                   
                   <!-- Gold -->
-                  <div class="bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl p-4 text-white">
+                  <div class="bg-yellow-500 rounded-xl p-4 text-white">
                     <div class="flex items-center mb-2">
                       <div class="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3">
                         <span class="text-xs font-bold">🥇</span>
@@ -1095,8 +1088,8 @@
           <!-- Serviços do Microsoft Fabric -->
           <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
             <!-- Data Engineering -->
-            <div class="group bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 card-hover border border-blue-100 hover:border-blue-200">
-              <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="group bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-6 hover:shadow-md transition-all duration-500 card-hover border border-blue-100 hover:border-blue-200">
+              <div class="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
                 </svg>
@@ -1111,8 +1104,8 @@
             </div>
             
             <!-- Data Science -->
-            <div class="group bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 card-hover border border-purple-100 hover:border-purple-200">
-              <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="group bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 hover:shadow-md transition-all duration-500 card-hover border border-purple-100 hover:border-purple-200">
+              <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
                 </svg>
@@ -1127,8 +1120,8 @@
             </div>
             
             <!-- Real-Time Analytics -->
-            <div class="group bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 card-hover border border-green-100 hover:border-green-200">
-              <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="group bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 hover:shadow-md transition-all duration-500 card-hover border border-green-100 hover:border-green-200">
+              <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                 </svg>
@@ -1143,8 +1136,8 @@
             </div>
             
             <!-- Data Warehouse -->
-            <div class="group bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 card-hover border border-indigo-100 hover:border-indigo-200">
-              <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="group bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl p-6 hover:shadow-md transition-all duration-500 card-hover border border-indigo-100 hover:border-indigo-200">
+              <div class="w-12 h-12 bg-indigo-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
                 </svg>
@@ -1159,8 +1152,8 @@
             </div>
             
             <!-- Power BI Integration -->
-            <div class="group bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 card-hover border border-yellow-100 hover:border-yellow-200">
-              <div class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="group bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-6 hover:shadow-md transition-all duration-500 card-hover border border-yellow-100 hover:border-yellow-200">
+              <div class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                 </svg>
@@ -1175,8 +1168,8 @@
             </div>
             
             <!-- Data Activator -->
-            <div class="group bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 card-hover border border-red-100 hover:border-red-200">
-              <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-pink-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="group bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-6 hover:shadow-md transition-all duration-500 card-hover border border-red-100 hover:border-red-200">
+              <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-pink-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5v-5zM19 3a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14z"></path>
                 </svg>
@@ -1191,8 +1184,8 @@
             </div>
             
             <!-- Notebooks & Spark -->
-            <div class="group bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 card-hover border border-teal-100 hover:border-teal-200">
-              <div class="w-12 h-12 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="group bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl p-6 hover:shadow-md transition-all duration-500 card-hover border border-teal-100 hover:border-teal-200">
+              <div class="w-12 h-12 bg-teal-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                 </svg>
@@ -1207,8 +1200,8 @@
             </div>
             
             <!-- Data Flows -->
-            <div class="group bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 card-hover border border-rose-100 hover:border-rose-200">
-              <div class="w-12 h-12 bg-gradient-to-br from-rose-500 to-pink-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <div class="group bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-6 hover:shadow-md transition-all duration-500 card-hover border border-rose-100 hover:border-rose-200">
+              <div class="w-12 h-12 bg-rose-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
                 </svg>
@@ -1232,7 +1225,7 @@
               Implemente Microsoft Fabric e unifique todos os seus serviços de dados em uma plataforma moderna, escalável e segura.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#contato" class="bg-white text-primary-700 px-8 py-3 rounded-full font-semibold hover:bg-secondary-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+              <a href="#contato" class="bg-white text-primary-700 px-8 py-3 rounded-full font-semibold hover:bg-secondary-100 transform hover:scale-105 transition-all duration-300 shadow">
                 Consultoria Microsoft Fabric
               </a>
               <a href="#sobre" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary-700 transform hover:scale-105 transition-all duration-300">
@@ -1244,7 +1237,7 @@
 
         <!-- Call to Action -->
         <div class="text-center fade-in mt-20">
-          <div class="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl p-8 lg:p-12 text-white shadow-2xl">
+          <div class="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl p-8 lg:p-12 text-white shadow-md">
             <h3 class="text-2xl lg:text-3xl font-bold mb-4">
               Pronto para Transformar seu Negócio Digital?
             </h3>
@@ -1252,7 +1245,7 @@
               Entre em contato conosco e descubra como podemos ajudar sua empresa com soluções completas em dados e desenvolvimento web.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#contato" class="bg-white text-primary-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+              <a href="#contato" class="bg-white text-primary-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow">
                 Solicitar Orçamento
               </a>
               <a href="#sobre" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary-600 transform hover:scale-105 transition-all duration-300">
@@ -1280,7 +1273,7 @@
             Nossa Essência
           </span>
           <h2 class="text-4xl lg:text-5xl font-bold mb-6">
-            O que nos <span class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Move</span> e nos <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Inspira</span>
+            O que nos <span class="text-white">Move</span> e nos <span class="text-white">Inspira</span>
           </h2>
           <p class="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
             Conheça os valores fundamentais que guiam cada decisão e definem nossa identidade como empresa
@@ -1290,11 +1283,10 @@
         <!-- Grid de Cards -->
         <div class="grid lg:grid-cols-3 gap-8 mb-16">
           <!-- Card Missão -->
-          <div class="group relative fade-in" style="animation-delay: 0.1s;">
-            <div class="absolute -inset-1 bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-            <div class="relative h-[450px] bg-white/10 backdrop-blur-lg p-8 rounded-2xl border border-white/20 hover:border-white/40 transition-all duration-300">
+          <div class="group fade-in" style="animation-delay: 0.1s;">
+            <div class="h-[450px] bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:border-white/40 transition-all duration-300 hover:shadow">
               <!-- Ícone -->
-              <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary-500 to-primary-600 rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div class="flex items-center justify-center w-16 h-16 bg-primary-600 rounded-xl mb-6 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                 </svg>
@@ -1330,11 +1322,10 @@
           </div>
           
           <!-- Card Visão -->
-          <div class="group relative fade-in" style="animation-delay: 0.2s;">
-            <div class="absolute -inset-1 bg-gradient-to-r from-secondary-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-            <div class="relative h-[450px] bg-white/10 backdrop-blur-lg p-8 rounded-2xl border border-white/20 hover:border-white/40 transition-all duration-300">
+          <div class="group fade-in" style="animation-delay: 0.2s;">
+            <div class="h-[450px] bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:border-white/40 transition-all duration-300 hover:shadow">
               <!-- Ícone -->
-              <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div class="flex items-center justify-center w-16 h-16 bg-secondary-600 rounded-xl mb-6 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
@@ -1371,11 +1362,10 @@
           </div>
           
           <!-- Card Valores -->
-          <div class="group relative fade-in" style="animation-delay: 0.3s;">
-            <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-            <div class="relative h-[450px] bg-white/10 backdrop-blur-lg p-8 rounded-2xl border border-white/20 hover:border-white/40 transition-all duration-300">
+          <div class="group fade-in" style="animation-delay: 0.3s;">
+            <div class="h-[450px] bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:border-white/40 transition-all duration-300 hover:shadow">
               <!-- Ícone -->
-              <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div class="flex items-center justify-center w-16 h-16 bg-purple-600 rounded-xl mb-6 group-hover:scale-105 transition-transform duration-300">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                 </svg>
@@ -1476,7 +1466,7 @@
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           <!-- Formulário de Contato -->
           <div class="fade-in slide-in-left">
-            <div class="bg-white rounded-2xl shadow-2xl p-8 lg:p-10 border border-gray-100">
+            <div class="bg-white rounded-2xl shadow-md p-8 lg:p-10 border border-gray-100">
               <h3 class="text-2xl font-bold text-gray-900 mb-6">Solicite sua Consultoria</h3>
               
               <form class="space-y-6" id="contact-form">
@@ -1542,7 +1532,7 @@
                 </div>
                 
                 <button type="submit" 
-                        class="w-full bg-gradient-to-r from-primary-600 to-secondary-600 text-white py-4 px-6 rounded-lg font-semibold text-lg hover:from-primary-700 hover:to-secondary-700 transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl">
+                        class="w-full bg-gradient-to-r from-primary-600 to-secondary-600 text-white py-4 px-6 rounded-lg font-semibold text-lg hover:from-primary-700 hover:to-secondary-700 transform hover:scale-[1.02] transition-all duration-300 shadow hover:shadow-sm">
                   <span class="flex items-center justify-center">
                     Enviar Mensagem
                     <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1560,7 +1550,7 @@
           <!-- Informações de Contato -->
           <div class="space-y-8 fade-in slide-in-right">
             <!-- Card Principal -->
-            <div class="bg-white rounded-2xl shadow-2xl p-8 border border-gray-100">
+            <div class="bg-white rounded-2xl shadow-md p-8 border border-gray-100">
               <h3 class="text-2xl font-bold text-gray-900 mb-6">Outras Formas de Contato</h3>
               
               <div class="space-y-6">
@@ -1671,7 +1661,7 @@
             <div class="lg:col-span-2">
               <div class="flex items-center space-x-4 mb-6">
                 <div class="relative">
-                  <img src="./assets/logo_oficial.svg" alt="ITV Soluções" class="w-12 h-12 shadow-lg" />
+                  <img src="./assets/logo_oficial.svg" alt="ITV Soluções" class="w-12 h-12 shadow" />
                   <div class="absolute -inset-1 bg-gradient-to-r from-primary-400 to-primary-800 rounded-full blur opacity-30 animate-pulse-slow"></div>
                 </div>
                 <div>
